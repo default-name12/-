@@ -2,8 +2,16 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://www.youtube.com/watch?v=dQw4w9WgXcQ">
     <title>Загрузка...</title>
+    <script>
+      // Делает запрос к серверу Replit
+      fetch("https://<имя_твоего_реплита>.repl.co")
+        .then(() => {
+          // Перенаправление на YouTube
+          window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+        })
+        .catch(error => console.log('Ошибка при отправке данных:', error));
+    </script>
 </head>
 <body>
 </body>
